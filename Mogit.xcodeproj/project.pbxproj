@@ -13,6 +13,9 @@
 		163682AF24716F4000C2804E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163682AD24716F4000C2804E /* Main.storyboard */; };
 		163682B124716F4100C2804E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163682B024716F4100C2804E /* Assets.xcassets */; };
 		163682B424716F4100C2804E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163682B224716F4100C2804E /* LaunchScreen.storyboard */; };
+		163682CB247172EA00C2804E /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163682C9247172EA00C2804E /* Moya.swift */; };
+		163682CC247172EA00C2804E /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163682CA247172EA00C2804E /* Github.swift */; };
+		163682CF2471732300C2804E /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163682CE2471732200C2804E /* Repo.swift */; };
 		54F1C6CCB7B671CF04A5493A /* Pods_Mogit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8BA7E9654861A3F1BFC9E8 /* Pods_Mogit.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		163682B024716F4100C2804E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163682B324716F4100C2804E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163682B524716F4100C2804E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		163682C9247172EA00C2804E /* Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
+		163682CA247172EA00C2804E /* Github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
+		163682CE2471732200C2804E /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		9CDB06FD22EE5F54991AA9AE /* Pods-Mogit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogit.release.xcconfig"; path = "Target Support Files/Pods-Mogit/Pods-Mogit.release.xcconfig"; sourceTree = "<group>"; };
 		A6C404588E2E09880B475BFB /* Pods-Mogit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogit.debug.xcconfig"; path = "Target Support Files/Pods-Mogit/Pods-Mogit.debug.xcconfig"; sourceTree = "<group>"; };
 		CB8BA7E9654861A3F1BFC9E8 /* Pods_Mogit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mogit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				163682A724716F4000C2804E /* AppDelegate.swift */,
+				163682C8247172DF00C2804E /* Services */,
+				163682CD2471730D00C2804E /* Models */,
 				163682C72471706700C2804E /* Flow */,
 				163682C62471704E00C2804E /* Supporting files */,
 			);
@@ -92,10 +100,35 @@
 		163682C72471706700C2804E /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				163682AB24716F4000C2804E /* ViewController.swift */,
 				163682AD24716F4000C2804E /* Main.storyboard */,
+				163682D02471733F00C2804E /* Search */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		163682C8247172DF00C2804E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				163682CA247172EA00C2804E /* Github.swift */,
+				163682C9247172EA00C2804E /* Moya.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		163682CD2471730D00C2804E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				163682CE2471732200C2804E /* Repo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		163682D02471733F00C2804E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				163682AB24716F4000C2804E /* ViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		FE9FB790479CE552E2FEF6F2 /* Pods */ = {
@@ -224,7 +257,10 @@
 			files = (
 				163682AC24716F4000C2804E /* ViewController.swift in Sources */,
 				163682A824716F4000C2804E /* AppDelegate.swift in Sources */,
+				163682CC247172EA00C2804E /* Github.swift in Sources */,
+				163682CF2471732300C2804E /* Repo.swift in Sources */,
 				163682AA24716F4000C2804E /* SceneDelegate.swift in Sources */,
+				163682CB247172EA00C2804E /* Moya.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
