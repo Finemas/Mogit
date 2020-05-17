@@ -16,6 +16,7 @@
 		163682CB247172EA00C2804E /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163682C9247172EA00C2804E /* Moya.swift */; };
 		163682CC247172EA00C2804E /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163682CA247172EA00C2804E /* Github.swift */; };
 		163682CF2471732300C2804E /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163682CE2471732200C2804E /* Repo.swift */; };
+		16EB77F924717BC500B1CCF8 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EB77F824717BC500B1CCF8 /* ReposViewModel.swift */; };
 		54F1C6CCB7B671CF04A5493A /* Pods_Mogit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8BA7E9654861A3F1BFC9E8 /* Pods_Mogit.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		163682C9247172EA00C2804E /* Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		163682CA247172EA00C2804E /* Github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
 		163682CE2471732200C2804E /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		16EB77F824717BC500B1CCF8 /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
 		9CDB06FD22EE5F54991AA9AE /* Pods-Mogit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogit.release.xcconfig"; path = "Target Support Files/Pods-Mogit/Pods-Mogit.release.xcconfig"; sourceTree = "<group>"; };
 		A6C404588E2E09880B475BFB /* Pods-Mogit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mogit.debug.xcconfig"; path = "Target Support Files/Pods-Mogit/Pods-Mogit.debug.xcconfig"; sourceTree = "<group>"; };
 		CB8BA7E9654861A3F1BFC9E8 /* Pods_Mogit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mogit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				163682AB24716F4000C2804E /* ViewController.swift */,
+				16EB77F824717BC500B1CCF8 /* ReposViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EB77F924717BC500B1CCF8 /* ReposViewModel.swift in Sources */,
 				163682AC24716F4000C2804E /* ViewController.swift in Sources */,
 				163682A824716F4000C2804E /* AppDelegate.swift in Sources */,
 				163682CC247172EA00C2804E /* Github.swift in Sources */,

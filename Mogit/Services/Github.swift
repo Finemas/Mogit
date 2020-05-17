@@ -11,21 +11,22 @@ import Moya
 
 protocol Networkable {
     var provider: MoyaProvider<ApiService> { get }
-    
-    func getRepos(completion: @escaping ([Repo]?, Error?) -> ())
+
+    func getRepos(username: String, completion: @escaping ([Repo]?, Error?) -> ())
 }
 
 class GithubManager: Networkable {
     var provider = MoyaProvider<ApiService>()
     
-    func getRepos(completion: @escaping ([Repo]?, Error?) -> ()) {
-        provider.request(.getRepos(username: "Finemas")) { response in
+    func getRepos(username: String, completion: @escaping ([Repo]?, Error?) -> ()) {
+        print(username)
+        provider.request(.getRepos(username: username)) { response in
             switch response.result {
             case .success(let value):
                 let decoder = JSONDecoder()
                 do {
-                    let posts = try decoder.decode([Repo].self, from: value.data)
-                    completion(posts, nil)
+                    let repos = try decoder.decode([Repo].self, from: value.data)
+                    completion(repos, nil)
                 } catch let error {
                     completion(nil, error)
                 }

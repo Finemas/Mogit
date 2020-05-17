@@ -11,7 +11,7 @@ import Foundation
 typealias Codable = Encodable & Decodable
 
 struct Repo: Codable {
-    var name: String
+    let name: String
     
     enum CodingKeys: String, CodingKey {
         case name

@@ -4,8 +4,8 @@ target 'Mogit' do
   use_frameworks!
 
   pod 'RxSwift'
-  pod 'Alamofire'
-  pod 'PromiseKit/Alamofire'
+  pod 'RxCocoa'
   pod 'Moya'
-
+  pod 'SnapKit'
+  
 end
